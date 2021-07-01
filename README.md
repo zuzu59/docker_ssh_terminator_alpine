@@ -1,7 +1,7 @@
 # docker_ssh_terminator_alpine
 Petit container Docker pour faire tourner un terminal Terminator et l'utiliser en ssh, quand on ne peut pas avoir de Terminator sur sa machine
 
-zf210701.2354
+zf210702.0005
 
 ## Buts
 Souvent quand on travaille avec plusieurs serveurs ou *nodes*, on aimerait exécuter la même commande sur plusieurs machines en même temps. Le terminal **Terminator** le permet de le faire très facilement.
@@ -21,3 +21,11 @@ Simplement faire:
 ```
 ./start.sh
 ```
+
+
+## Choses encore à faire !
+
+### Installation de openshift-cli 
+Il faudra encore ajouter les commandes **oc** dans l'image Docker
+
+https://github.com/saily/openshift-cli
