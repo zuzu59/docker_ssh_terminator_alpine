@@ -1,0 +1,22 @@
+#zf210701.2326
+#source: 
+
+version: '3.3'
+
+services:
+    nas:
+        build: .
+        image: zalpine
+        container_name: alpine_ssh
+        volumes:
+            - ./sshd_config:/etc/ssh/sshd_config
+            - ./authorized_keys:/root/.ssh/authorized_keys
+            - ~/.ssh/config:/root/.ssh/config
+            - ./motd:/etc/motd
+            - ./terminator.config:/root/.config/terminator/config
+        # restart: always
+        # environment:
+        #     SHARED_DIRECTORY: /nfsshare
+        ports:
+            - "22222:22"
+        # privileged: true
