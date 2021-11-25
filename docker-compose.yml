@@ -1,4 +1,4 @@
-#zf210701.2326
+#zf211125.2013
 #source: 
 
 version: '3.3'
@@ -19,4 +19,4 @@ services:
         #     SHARED_DIRECTORY: /nfsshare
         ports:
             - "22222:22"
-        # privileged: true
+        privileged: true
