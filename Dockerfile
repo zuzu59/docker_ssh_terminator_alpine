@@ -1,7 +1,7 @@
 FROM alpine
 
 MAINTAINER Christian Zufferey <christian@zufferey.com>
-# zf210701.2332
+# zf211125.0905
 
 # FROM alpine
 
@@ -10,7 +10,7 @@ MAINTAINER Christian Zufferey <christian@zufferey.com>
 # RUN /root//ubuntu_config.sh
 
 RUN apk update \
-	&& apk add openssh openssh-server curl nano terminator xfce4 xauth \
+	&& apk add openssh openssh-server curl nano terminator xfce4 xauth bash htop\
   && ssh-keygen -A \
   && passwd -d root \
 	&& touch /root/.Xauthority
