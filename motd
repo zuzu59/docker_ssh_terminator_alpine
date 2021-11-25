@@ -1,4 +1,4 @@
-zf210701.2328
+zf211125.0905
 
 Terminator shortcuts
 
@@ -13,4 +13,13 @@ Ctrl-Tab : Changer de "split" de fenêtre
 
 Pour démarrer Terminator, simplement faire: terminator
 
+Cliquer sur la toute petite icône en haut à gauche sur 'New group...' pour créer un nouveau groupe
+Utiliser la souris pour partager l'écran en plusieurs fenêtres
+Dans chaque fenêtre se connecter sur les différentes machines avec ssh 
+Cliquer sur la toute petite icône en haut à gauche de chaque fenêtre pour la mettre dans le nouveau groupe
+Tout ce que l'on va entrer dans une fenêtre va se retrouver sur les autres !
+
+Pour charger mes alias:
+
+source <(curl -s https://raw.githubusercontent.com/zuzu59/deploy-proxmox/master/alias)
 
